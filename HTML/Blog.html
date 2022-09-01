@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+    <link rel="stylesheet" href="../CSS/gallery.css">
+
+    <link rel="stylesheet" href="../CSS/home.css">
+    <link rel="stylesheet" href="../CSS/blog.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="../Images/logo-1-1.png" alt="">
+                <p>Boldo</p>
+            </div>
+            <ul>
+                <li> <a href="home.html">Home</a></li>
+                <li> <a href="About.html"> About</a></li>
+                <li> <a href="Contact form.html">Contact us</a> </li>
+                <a href="../HTML/login.html"" id="login">Log in</a>
+            </ul>
+        </nav>
+
+        <div class="blog-content About-content">
+            <h4>
+                Blog
+            </h4>
+            <p class="content">
+                Thoughts and words
+            </p>
+        </div>
+
+        <div class="img-post">
+            <div class="left-img-1">
+                <img src="../Images/img-post.png" alt="">
+            </div>
+            <div class="right-post">
+                <div class="post-container">
+
+                    <div class="date">
+                        <h4>Category</h4>
+                        <p>November 22,2021</p>
+                    </div>
+                    <p id="post-content">Pitch termsheet backing validation focus release.</p>
+                    <div class="post-1-1">
+                        <img src="../Images/post-1-1.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+
+
+    </header>
+
+    <section class="lightbox-gallery">
+
+        <div class="gallery">
+
+            <ul class="controls">
+                <li class="buttons active" data-filter="all">All</li>
+                <li class="buttons" data-filter="old-clients">Old Clients</li>
+                <li class="buttons" data-filter="new-clients">New Clients</li>
+                <!-- <li class="buttons" data-filter="new-clients">New Clients</li> -->
+            </ul>
+
+            <div class="image-container">
+
+                <a href="../lightbox Gallery/img-1-1.png" class="image old-clients">
+                    <img src="../lightbox Gallery/img-1-1.png" alt="">
+                </a>
+                <a href="../lightbox Gallery/img-1-2.png" class="image old-clients">
+                    <img src="../lightbox Gallery/img-1-2.png" alt="">
+                </a>
+                <a href="../Images/img-1.png" class="image old-clients">
+                    <img src="../Images/img-1.png" alt="">
+                </a>
+                <a href="../Images/img-2.png" class="image old-clients">
+                    <img src="../Images/img-2.png" alt="">
+                </a>
+                <a href="../Images/img-3.png" class="image old-clients">
+                    <img src="../Images/img-3.png" alt="">
+                </a>
+                <a href="../lightbox Gallery/4.png" class="image old-clients">
+                    <img src="../lightbox Gallery/4.png" alt="">
+                </a>
+                <a href="../lightbox Gallery/5.png" class="image new-clients">
+                    <img src="../lightbox Gallery/5.png" alt="">
+                </a>
+                <a href="../lightbox Gallery/6.png" class="image new-clients">
+                    <img src="../lightbox Gallery/6.png" alt="">
+                </a>
+                <a href="../lightbox Gallery/7.png" class="image new-clients">
+                    <img src="../lightbox Gallery/7.png" alt="">
+                </a>
+                <a href="../lightbox Gallery/8.png" class="image new-clients">
+                    <img src="../lightbox Gallery/8.png" alt="">
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="email-card-box">
+            <div class="email-card">
+                <p>An enterprise template to ramp up your company website</p>
+                <div class="emailForm">
+                    <form action="#" method="post">
+                        <input type="text" placeholder="Your email address">
+                    </form>
+                    <div class="start-button">
+                        <a href="#">Start now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="site-info">
+            <div class="left-info">
+                <div class="logo">
+                    <img src="../Images/logo-1-1.png" alt="">
+                    <p>Boldo</p>
+                </div>
+                <p id="info">
+                    Social media validation business model canvas graphical user
+                    interface launch party creative facebook iPad twitter.
+                </p>
+
+                <p id="info-1">
+                    All rights reserved.
+                </p>
+            </div>
+            <div class="right-info"></div>
+
+
+            <table width=600">
+                <tr>
+                    <th>Landing</th>
+                    <th>Company</th>
+                    <th>Resources</th>
+                </tr>
+                <tr>
+                    <td>Home</td>
+                    <td>Home</td>
+                    <td>Blog</td>
+                </tr>
+                <tr>
+                    <td>Products</td>
+                    <td>Career</td>
+                    <td>Products</td>
+                </tr>
+                <tr>
+                    <td>Services</td>
+                    <td>Services</td>
+                    <td>Services</td>
+                </tr>
+            </table>
+        </div>
+    </footer>
+
+
+    <script src="../HTML/index.html"></script>
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- magnific popup js cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+
+            $('.buttons').click(function () {
+
+                $(this).addClass('active').siblings().removeClass('active');
+
+                var filter = $(this).attr('data-filter')
+
+                if (filter == 'all') {
+                    $('.image').show(400);
+                } else {
+                    $('.image').not('.' + filter).hide(200);
+                    $('.image').filter('.' + filter).show(400);
+                }
+
+            });
+
+            $('.gallery').magnificPopup({
+
+                delegate: 'a',
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

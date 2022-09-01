@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* home page header and navigation bar */
+ 
+footer{
+  margin-top: 50%;
+  background: rgb(243, 241, 241);
+}
+nav {
+  /* margin-bottom: 60px; */
+/* border: 2px solid black; */
+
+padding: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: #E5E5E5;
+width: 93%;
+margin: auto;
+position: relative;
+/* background: rgb(156, 156, 156); */
+/* position: sticky ;
+top: 0;
+z-index: 1000000000; */
+}
+
+
+ul {
+display: flex;           
+list-style: none;
+justify-content: space-evenly;
+align-items: center;
+}
+
+nav ul li {
+
+margin-right: 2.8rem;
+font-family: 'Open Sans';
+font-weight: 600;
+padding: 10px 0;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none ;
+}
+
+nav ul li:hover a{
+cursor: pointer;
+color:#65E4A3;
+/* border-bottom: 3px solid whitesmoke; */
+}
+
+.logo {
+display: flex;
+}
+
+.logo:hover {
+cursor: pointer;
+}
+
+.logo p {
+color:#0A2640 !important;
+font-weight: 900;
+font-family: 'Manrope';
+font-size: 40px !important;
+margin-left: 5px;
+/* margin-top: -10px; */
+
+}
+
+.logo img {
+/* margin: 5px; */
+height: 35px;
+margin-top: 10px 5px 5px 5px;
+}
+
+  #login {
+color: white;
+text-decoration: none;
+padding: 8px 20px;
+border-radius: 40px;
+width: 120px;
+text-align: center;
+background: white;
+font-family: 'Open Sans';
+font-weight: 800;
+color: #0A2640;
+transition: .5s ease-in-out;
+}
+
+nav ul #login:hover {
+border: 1px solid white;
+background: transparent;
+color: white;
+}
+
+header{
+  height: 20vh;
+  margin-bottom: 60px;
+  /* background: #0A2640; */
+}
+h3{
+  font-size: 2rem !important;
+}
+.register,
+.login{
+  /* height: 300px; */
+  width: 35%;
+  height: 10px !important;
+  margin: auto;
+  /* border: 2px solid red !important; */
+}
+.box{
+  width: 100% !important;
+  height: 60px !important;
+  padding: 1rem 1.2rem !important;
+  border-radius: 0.1rem !important;
+  margin-top: 1px !important;
+}
+::placeholder{
+  font-size: 15px;
+}
+.btn{
+  width: 100%;
+  font-size: 20px;
+  text-transform: capitalize;
+  background: #0A2640;
+  color: white;
+  border-radius: 5px;
+  border: none !important;
+  height: 50px !important;
+}
+p{
+  color:rgb(80, 77, 77) !important;
+  font-size: 20px !important;
+}
+.remember{
+  
+  /* border: 2px solid red; */
+}
+.link{
+  width: 100%;
+  background: #333;
+  font-weight: 600;
+  padding: 10px 132px;
+  font-size: 20px !important;
+  text-decoration: none;
+  width: 200px !important;
+}
+.register .link{
+  padding: 10px 149px;
+}
+.register form,
+.login form {
+  max-width: 40rem;
+  border-radius: .5rem;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border: 0.2rem solid #333;
+  margin: 1rem auto;
+}
+
+.register form h3,
+.login form h3 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.register form .box,
+.login form .box {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border-radius: .5rem;
+  border: 0.2rem solid #333;
+  font-size: 1.6rem;
+  color: #666;
+  text-transform: none;
+  margin: .7rem 0;
+}
+
+.register form .remember,
+.login form .remember {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: .5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.register form .remember label,
+.login form .remember label {
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+}
+
+.register form p,
+.login form p {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+  color: #666;
+  text-align: center;
+  padding-bottom: 1rem;
+}

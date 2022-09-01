@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-family: 700;
+    /* text-transform: capitalize;   */
+    /* background: rgb(228, 226, 226); */
+    /* transition:all .5s cubic-bezier(.34,1.12,.68,1.31); */
+    transition: .5s;
+}
+
+.gallery {
+    min-height: 100vh;
+    width: 100%;
+    /* background:#eee; */
+    /* padding-bottom: 100px; */
+    width: 82%;
+    /* padding: 250px; */
+    margin: auto;
+    /* border: 2px solid black; */
+    margin-top: -100px;
+}
+
+.gallery .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    list-style: none;
+}
+
+.gallery .controls .buttons {
+    height: 40px;
+    width: 140px;
+    border-radius: 10px;
+    background: #fff;
+    color: #666;
+    color: rgb(0, 25, 58);
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    text-align: center;
+}
+
+.gallery .controls .buttons.active {
+    background: rgb(0, 25, 58);
+    color: #fff;
+}
+
+.gallery .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery .image-container .image:nth-child(1) {
+    height: 250px;
+    width: 240px;
+}
+
+.gallery .image-container .image:nth-child(2) {
+    height: 250px;
+    width: 240px;
+}
+
+.gallery .image-container .image:nth-child(3) {
+    height: 250px;
+    width: 240px;
+}
+
+.gallery .image-container .image:nth-child(4) {
+    height: 250px;
+    width: 240px;
+}
+
+/*
+
+.gallery .image-container .image:nth-child(5)
+{
+    height:225px;
+    width: 230px;
+}
+.gallery .image-container .image:nth-child(6)
+{
+    height:225px;
+    width: 230px;
+}
+.gallery .image-container .image:nth-child(7)
+{
+    height:225px;
+    width: 230px;
+}
+.gallery .image-container .image:nth-child(8)
+{
+    height:225px;
+    width: 230px;
+}
+ */
+
+.gallery .image-container .image {
+    height: 170px;
+    width: 170px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    /* border:15px solid #fff; */
+    /* box-shadow: 2px 3px 10px black;     */
+    margin: 8px;
+}
+
+.gallery .image-container .image:hover {
+    box-shadow: 2px 3px 10px black;
+}
+
+.gallery .image-container .image img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-position: center;
+
+    /* object-fit: cover; */
+}
+
+.gallery .image-container .image:hover img {
+    transform: scale(0.97);
+
+}

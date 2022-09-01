@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&family=League+Gothic&family=Manrope:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700;1,800;1,900&family=Work+Sans:wght@100;400&display=swap');
+header
+{
+    background: white;
+}
+header::before{
+    background: none;    
+}
+.logo p{
+    color: #0A2640;
+    margin-top: 4px;
+}
+nav ul li a{
+
+    color: #0A2640 !important;   
+}
+.blog-content h4{
+    font-size: 38px;
+}
+.blog-content .content{
+    font-size: 45px !important;
+}
+#login{
+    text-decoration: none;
+    color: #0A2640;
+    font-family: 'Open sans';
+    font-weight: 600;
+    border: 2px solid #0A2640;
+}
+#login:hover {
+    background: #0A2640 !important;
+    color: white !important;
+}
+.blog-content{
+    margin-top: 3%;
+}
+.img-post{
+    /* border: 2px solid black; */
+        margin-top: 20px;
+        display: flex;      
+        margin-bottom: 80px;
+      
+    }
+.left-img-1{
+    text-align: center;
+    width: 50%;
+    /* border: 2px solid black; */
+}
+.right-post{
+    /* border: 2px solid black; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.post-container{
+    width: 90%;
+    height: 70%;
+}
+#post-content{
+    font-family: 'Manrope';
+    font-weight: 400 !important;
+    font-size: 48px !important;
+    line-height: 72px;
+}
+.date{
+    /* border: 2px solid black; */
+    display: flex;
+}
+.date h4,p{
+    font-family: 'open sans';
+    font-weight: 700;
+    font-size: 16px !important;
+    line-height: 28px;
+}
+.date h4{
+    margin-right: 10px;
+    font-weight: 700;
+}
+.date p{
+    font-weight: 400;
+}
+.post-1-1{
+    margin-top: 10px;
+    margin-left: 5px;
+    /* border: 2px solid black; */
+}
+
+hr{
+    /* border: 2px solid black; */
+    width: 94%;
+    height: 3px;
+    background: black;
+    margin: auto;
+}
+/* lightbox-gallery{ */
+    /* margin-top: 50%; */
+/* } */
+
+
+
+
+
+.email-card p{
+    /* line-height: 70px ; */
+}
+
+.gallery{
+    margin:0 auto;
+}

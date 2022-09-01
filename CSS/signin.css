@@ -1,0 +1,23 @@
+
+nav{
+
+    background: gray;
+    padding: 10px;
+    border-radius: 10px;
+    position: sticky !important;
+    top: 0 !important;
+}
+ul li:hover a{
+    color: #83cca5 !important;
+    /* font-size: 26px !important; */
+}
+
+footer{
+    background: rgb(235, 230, 230);
+}
+
+.login{
+    /* border: 2px solid black; */
+    margin-top: 8%;
+}
+
